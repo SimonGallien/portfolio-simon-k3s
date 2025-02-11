@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: monportfolio
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: monportfolio
+  template:
+    metadata:
+      labels:
+        app: monportfolio
+    spec:
+      containers:
+      - name: monportfolio
+        image: docker pull ghcr.io/simongallien/ghtoken_product_demo:latest  # Image Docker de ton portfolio
+        ports:
+        - containerPort: 80
