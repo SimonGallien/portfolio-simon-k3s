@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: monportfolio
-        image: docker pull ghcr.io/simongallien/ghtoken_product_demo:latest  # Image Docker de ton portfolio
+        image: ghcr.io/simongallien/portfolio-simon:latest  # Image Docker de ton portfolio
         ports:
         - containerPort: 80
