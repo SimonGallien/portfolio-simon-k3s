@@ -14,12 +14,9 @@ spec:
         app: portfolio-simon
     spec:
       containers:
-<<<<<<< HEAD
       - name: monportfolio
         image: ghcr.io/simongallien/portfolio-simon:latest
-=======
       - name: portfolio-simon
         image: ghcr.io/simongallien/portfolio-simon:latest  # Image Docker de ton portfolio
->>>>>>> 0432308 (Fix: Change deployment name from monportfolio to portfolio-simon)
         ports:
         - containerPort: 80
